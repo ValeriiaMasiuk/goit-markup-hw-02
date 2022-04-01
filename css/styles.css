@@ -1,40 +1,44 @@
 :root {
+  --logo-color: #000000;
   --main-text-color: #212121;
   --text-color: #757575;
   --accent-text-color: #2196f3;
+  --secondary-color: #ffffff;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
+  --button-background-color: #f5f4fa;
 }
 
 body {
   color: var(--main-text-color);
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
 
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
-.title {
+h2 {
   font-weight: 700;
-  font-style: normal;
   font-size: 36px;
-  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 
 /* Header */
 
 .header-logo {
-  color: #000000;
+  color: var(--logo-color);
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
 .logo-part {
@@ -45,9 +49,6 @@ li {
   color: var(--main-text-color);
 
   font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -58,10 +59,8 @@ li {
 
 .header-address {
   color: var(--text-color);
+
   font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -73,10 +72,9 @@ li {
 /* Hero */
 
 .hero-header {
-  color: #ffffff;
+  color: var(--secondary-color);
 
   font-weight: 900;
-  font-style: normal;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -84,12 +82,11 @@ li {
 }
 
 .hero-button {
-  color: #ffffff;
+  color: var(--secondary-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
 
   font-weight: 700;
-  font-style: normal;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
@@ -100,75 +97,65 @@ li {
 
 .features .title {
   font-weight: 700;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
 .feature-details {
   color: var(--text-color);
 
   font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Team */
 
 .team-member {
   font-weight: 500;
-  font-style: normal;
   font-size: 16px;
-  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-job {
   color: var(--text-color);
 
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
-  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Footer */
 
 .footer-logo {
-  color: #ffffff;
+  color: var(--secondary-color);
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--logo-color);
 }
 
 .footer-address {
-  color: #ffffff;
+  color: var(--secondary-color); 
 
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+}
+
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--accent-text-color);
 }
 
 .footer .link {
-  color: rgba(255,255,255,0.6);
+  color: var(--footer-links-color);
 
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .footer .link:hover,
@@ -180,20 +167,18 @@ li {
 
 .filter-button {
   color: var(--main-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--button-background-color);
   cursor: pointer;
 
   font-weight: 500;
-  font-style: normal;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
+  color: var();
   background-color: var(--accent-text-color);
 }
 
@@ -203,16 +188,15 @@ li {
   color: var(--text-color);
 
   font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
-  letter-spacing: 0.03em;
 }
 
-.example .title {
+.example-title {
+  color: var(--main-text-color);
+
   font-weight: 700;
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   text-align: left;
